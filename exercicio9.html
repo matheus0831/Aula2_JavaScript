@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Insira o primeiro número: "))
+        let n2 = parseInt(prompt("Insira o segundo número: "))
+        let opccao = parseInt(prompt("Insira uma opccao, lembrando que 1 é adicao, 2 é subtracao, 3 é multiplicacao e 4 é divisao"))
+        let resultado = null
+        switch(opccao){
+            case 1:
+                resultado = n1 + n2
+                window.alert("O resultado da operacao e: " + resultado)
+            break
+
+            case 2:
+                resultado = n1 - n2
+                window.alert("O resultado da operacao e: " + resultado)
+            break
+
+            case 3:
+                resultado = n1 * n2
+                window.alert("O resultado da operacao e: " + resultado)
+            break
+
+            case 4:
+                resultado = n1 / n2
+                window.alert("O resultado da operacao e: " + resultado)
+            break
+        }
+    </script>
+    
+</body>
+</html>

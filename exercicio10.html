@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Insira o numero de lados do poligono: "))
+        let n2 = parseFloat(prompt("Insira a medida dos lados do poligono: "))
+        let perimetro = null
+        if(n1 < 3){
+            window.alert("Não é um poligono")
+        }else if(n1 == 3){
+            perimetro = n2*n1
+            window.alert("O poligono é um triangulo com perimetro de " + perimetro)
+        }else if(n1 == 4){
+            perimetro = n2*n2
+            window.alert("O poligono é um quadrado com area de " + perimetro)
+        }else if(n1 == 5){
+            window.alert("O poligono é um pentagono")
+        }else{
+            window.alert("Poligono não identificado")
+        }
+    </script>
+    
+</body>
+</html>
